@@ -1,0 +1,23 @@
+
+cc_library(
+	name = "smart_ptr",
+	visibility = ["//visibility:public"],
+	includes = [
+		"include/",
+	],
+	hdrs = glob([
+		"include/boost/**/*.hpp",
+		"include/boost/**/*.ipp",
+	]),
+	srcs = [
+	],
+	defines = [
+	],
+	deps = [
+		"@com_github_bazelboost_config//:config",
+		"@com_github_bazelboost_assert//:assert",
+		"@com_github_bazelboost_predef//:predef",
+		"@com_github_bazelboost_detail//:detail",
+		"@com_github_bazelboost_intrusive//:intrusive"
+	],
+)
