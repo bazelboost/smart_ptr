@@ -15,9 +15,11 @@ cc_library(
 	],
 	deps = [
 		"@com_github_bazelboost_config//:config",
+		"@com_github_bazelboost_static_assert//:static_assert",
+		"@com_github_bazelboost_type_traits//:type_traits",
 		"@com_github_bazelboost_assert//:assert",
-		"@com_github_bazelboost_predef//:predef",
-		"@com_github_bazelboost_detail//:detail",
-		"@com_github_bazelboost_intrusive//:intrusive"
+		"@com_github_bazelboost_core//:core",
+		"@com_github_bazelboost_throw_exception//:throw_exception",
+		"@com_github_bazelboost_move//:move"
 	],
 )
