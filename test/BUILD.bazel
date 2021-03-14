@@ -5,3 +5,12 @@ cc_test(
     srcs = ["quick.cpp"],
     deps = ["//:smart_ptr"],
 )
+
+cc_test(
+    name = "make_shared_test",
+    srcs = ["make_shared_test.cpp"],
+    deps = [
+        "//:smart_ptr",
+        "@boost//core",
+    ],
+)
